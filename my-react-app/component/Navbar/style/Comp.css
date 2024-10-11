@@ -1,0 +1,149 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: cursive;
+}
+
+.navbar .logo {
+  width: 150px;
+}
+
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  font-size: 15px;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.navbar button {
+  background: transparent;
+  font-size: 16px;
+  color: rgb(85, 99, 99);
+  border: 1px solid tomato;
+  padding: 10px 30px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.navbar button:hover {
+  background-color: blanchedalmond;
+}
+
+.navbar .active {
+  padding-bottom: 3px;
+  border-bottom: 1px solid blue;
+}
+
+.navbar li {
+  cursor: pointer;
+  font-family: cursive;
+}
+
+.navbar-search-icon {
+  position: relative;
+}
+
+.navbar-search-icon .dot {
+  position: absolute;
+  min-height: 10px;
+  min-width: 10px;
+  background-color: tomato;
+  border-radius: 5px;
+  top: -7px;
+  right: -8px;
+}
+
+@media (max-width:1050px) {
+  .navbar .logo{
+    width: 140px;
+  }
+  .navbar-menu{
+    gap: 20px;
+    font-size: 17px;
+  }
+  .navbar-right{
+    gap: 30px;
+  }
+  .navbar-right img{
+    width: 22px;
+  }
+  .navbar-right button{
+    padding: 8px 25px;
+  }
+}
+
+@media (max-width:900px) {
+  .navbar .logo{
+    width: 140px;
+  }
+  .navbar-menu{
+    gap: 10px;
+    font-size: 15px;
+  }
+  .navbar-right{
+    gap: 30px;
+  }
+  .navbar-right img{
+    width: 20px;
+  }
+  .navbar-right button{
+    padding: 6px 20px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width:750px) {
+
+  .navbar-menu{
+    display: none;
+  }
+}
+
+@media (max-width:1050px) {
+
+  .header{
+    height: 38vw;
+  }
+
+  .header-content{
+    max-width: 40%;
+  }
+}
+
+@media (max-width:750px) {
+
+
+  .header-content{
+    max-width: 55%;
+  }
+
+  .header-content p {
+    display: none;
+  }
+  .header-content button{
+    padding: 2vw 4vw;
+  }
+}
+
+.navbar-menu a, 
+.navbar-menu .link {
+  text-decoration: none;  /* Menghilangkan garis bawah */
+  color: inherit;         /* Warna link mengikuti warna teks di sekitarnya */
+}
+
+.navbar-menu a:hover, 
+.navbar-menu .link:hover {
+  color: #ff6347;         /* Ubah warna saat link di-hover, jika diinginkan */
+}
+
+.active {
+  font-weight: bold;      /* Contoh styling untuk link yang aktif */
+  color: #ff6347;         /* Ubah warna link yang aktif */
+}

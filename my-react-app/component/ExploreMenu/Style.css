@@ -1,0 +1,39 @@
+.explore-menu {
+  flex-direction: column;
+  
+}
+
+
+.explore-menu-text {
+  max-width: 100%;
+  columns: #800;
+  font-family: cursive;
+}
+
+.explore-menu-list {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  align-items: center;
+  margin: 20px 20px;
+  text-align: center;
+  overflow-x: scroll;
+}
+
+.explore-menu-list::-webkit-scrollbar {
+  display: none;
+}
+
+
+.explore-menu-list-item img.active {
+  border: 3px solid rgb(25, 21, 21);
+  padding: 1px;
+  border-radius: 70px;
+}
+
+@media (max-width:1050) {
+  .explore-menu-text {
+    max-width: 100%;
+    font-size: 14px;
+  }
+}

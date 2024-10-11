@@ -1,0 +1,46 @@
+.header {
+    height: 25vw;
+    width: 60vw;
+    margin: auto;
+    background: url("../../src/1537562.jpg") no-repeat;
+    background-size: cover; /* Menggunakan cover untuk menutupi area */
+    border-radius: 14px;
+    position: relative;
+    background-position: center;
+    overflow: hidden; /* Menyembunyikan overflow */
+  }
+  
+  .header-content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Menyelaraskan konten ke tengah */
+    max-width: 50%; 
+    bottom: 30%; /* Mengubah posisi dari bawah */
+    left: 50%;
+    transform: translateX(-50%); 
+    font-family: cursive;
+    text-align: center; 
+    color: white; /* Mengatur warna teks */
+    padding: 20px; /* Menambahkan padding */
+    background: rgba(133, 38, 38, 0.5); /* Latar belakang transparan untuk teks */
+    border-radius: 10px; /* Sudut membulat untuk latar belakang teks */
+    animation: fadeIn 2s;
+  }
+
+  @media (max-width: 768px) {
+    .header-content {
+      max-width: 80%; /* Memperlebar konten di perangkat kecil */
+      bottom: 10%; /* Menyesuaikan jarak dari bawah */
+    }
+  }
+
+  @keyframes fadeIn {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+  }
